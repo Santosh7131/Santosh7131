@@ -1,13 +1,56 @@
-<h1 align="center">Hey 👋, I'm Santosh Kumaar {aka Sandy}</h1>
-<h3 align="center">"Turning coffee into code ☕➡️💻"</h3>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,17,27&height=210&text=Santosh%20Kumaar&fontSize=62&fontColor=ffffff&animation=fadeIn&desc=full-stack%20%C3%97%20machine%20learning&descAlignY=68&descSize=20" alt="Santosh Kumaar — full-stack × machine learning" />
+</p>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=santosh7131&label=Profile%20views&color=0e75b6&style=flat" alt="santosh7131" /> </p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=600&color=36BCF7&center=true&vCenter=true&width=620&lines=Full-Stack+Developer+%C3%97+ML+Developer;B.Tech+CSE+%40+SRM+%C2%B7+BS+%40+IIT+Madras;Building+AURA+%E2%80%94+AI+data+preprocessing">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=600&color=1F6FEB&center=true&vCenter=true&width=620&lines=Full-Stack+Developer+%C3%97+ML+Developer;B.Tech+CSE+%40+SRM+%C2%B7+BS+%40+IIT+Madras;Building+AURA+%E2%80%94+AI+data+preprocessing" alt="Full-Stack Developer × ML Developer · B.Tech CSE @ SRM · BS @ IIT Madras · Building AURA — AI data preprocessing" />
+  </picture>
+</p>
 
-# ✍️ Boring Stuff
-☕ Just another human trying to turn caffeine into code. When I’m not buried in terminals, I’m grinding in the gym or lost in a game lobby. Code keeps my brain busy, weights keep me sane, and games keep me wired. Somewhere between deadlifts, late-night commits, and boss fights, I find my balance.
+<p align="center">
+  <a href="mailto:rsantoshkumaar2005@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/santosh7131"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn" /></a>
+  <img src="https://img.shields.io/badge/Portfolio-%F0%9F%9A%A7_under_construction-F7B32B?style=for-the-badge" alt="Portfolio — under construction" />
+</p>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+## ⚡ Flagship — AURA Preprocessor
 
-# 📊 GitHub Streak:
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=santosh7131&" alt="santosh7131" /></p>
+- 🧠 AI-driven data preprocessing platform — Groq `Llama-3.3-70b` recommends smart cleaning strategies
+- 🧰 15+ ML preprocessing modules powered by `pandas` + `scikit-learn`
+- ⚙️ `FastAPI` backend · `React + TypeScript` front-end · real-time progress UI
+- 🥈 2nd place — Wells Fargo Ideathon 2025
+
+<p>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+</p>
+
+👉 **[Explore the repo →](https://github.com/Santosh7131/Aura-Preprocessor)**
+
+## 🚧 Portfolio v2
+
+`▓▓▓▓░░░░░░` a brand-new portfolio is in the works — the link lands here when it ships.
+
+## 🛠️ Tech stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,cpp,java,react,nodejs,express,fastapi,sklearn,mongodb,postgres,docker,git,vercel,azure&perline=8" alt="Python, JavaScript, TypeScript, C++, Java, React, Node.js, Express, FastAPI, scikit-learn, MongoDB, PostgreSQL, Docker, Git, Vercel, Azure" />
+</p>
+
+## 🔥 Streak
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Santosh7131&theme=tokyonight&hide_border=true&background=00000000">
+    <img src="https://streak-stats.demolab.com/?user=Santosh7131&theme=default&hide_border=true&background=00000000" alt="GitHub contribution streak" />
+  </picture>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,17,27&height=110&section=footer" alt="" />
+</p>
