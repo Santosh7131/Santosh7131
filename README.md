@@ -45,7 +45,7 @@
 ## 🏙️ Contribution skyline
 
 <p align="center">
-  <img src="assets/skyline-2025.gif" alt="3D model of my 2025 GitHub contribution graph, rendered as a city skyline" width="880" />
+  <img src="assets/skyline-2025.png" alt="3D model of my 2025 GitHub contribution graph, rendered as a city skyline" width="880" />
 </p>
 
 <p align="center">
