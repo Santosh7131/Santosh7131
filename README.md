@@ -45,11 +45,14 @@
 ## 🏙️ Contribution skyline
 
 <p align="center">
-  <img src="assets/skyline-2025.png" alt="3D model of my 2025 GitHub contribution graph, rendered as a city skyline" width="880" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-3d-dark.svg">
+    <img src="profile-3d-contrib/profile-3d-light.svg" alt="Isometric 3D graph of my GitHub contributions over the past year, with a language breakdown and an activity radar" width="880" />
+  </picture>
 </p>
 
 <p align="center">
-  <sub>my 2025 contribution graph as a 3D model — generated with <a href="https://github.com/github/gh-skyline">github/gh-skyline</a></sub>
+  <sub>regenerated daily — built with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a></sub>
 </p>
 
 <p align="center">

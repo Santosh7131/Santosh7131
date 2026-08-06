@@ -1,0 +1,5 @@
+# The 3D-contrib action writes every preset into this folder on each run;
+# only the two variants the README uses are tracked.
+profile-3d-contrib/*
+!profile-3d-contrib/profile-3d-light.svg
+!profile-3d-contrib/profile-3d-dark.svg
