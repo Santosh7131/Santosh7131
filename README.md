@@ -42,13 +42,14 @@
   <img src="https://skillicons.dev/icons?i=python,js,ts,cpp,java,react,nodejs,express,fastapi,sklearn,mongodb,postgres,docker,git,vercel,azure&perline=8" alt="Python, JavaScript, TypeScript, C++, Java, React, Node.js, Express, FastAPI, scikit-learn, MongoDB, PostgreSQL, Docker, Git, Vercel, Azure" />
 </p>
 
-## 🔥 Streak
+## 🏙️ Contribution skyline
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Santosh7131&theme=tokyonight&hide_border=true&background=00000000">
-    <img src="https://streak-stats.demolab.com/?user=Santosh7131&theme=default&hide_border=true&background=00000000" alt="GitHub contribution streak" />
-  </picture>
+  <img src="assets/skyline-2025.gif" alt="3D model of my 2025 GitHub contribution graph, rendered as a city skyline" width="880" />
+</p>
+
+<p align="center">
+  <sub>my 2025 contribution graph as a 3D model — generated with <a href="https://github.com/github/gh-skyline">github/gh-skyline</a></sub>
 </p>
 
 <p align="center">
