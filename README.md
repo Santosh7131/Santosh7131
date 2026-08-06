@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,17,27&height=210&text=Santosh%20Kumaar&fontSize=62&fontColor=ffffff&animation=fadeIn&desc=full-stack%20%C3%97%20machine%20learning&descAlignY=68&descSize=20" alt="Santosh Kumaar — full-stack × machine learning" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,17,27&height=270&text=Santosh%20Kumaar&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=full-stack%20%C3%97%20machine%20learning&descAlignY=55&descSize=20" alt="Santosh Kumaar — full-stack × machine learning" />
 </p>
 
 <p align="center">
