@@ -15,7 +15,7 @@
   <a href="https://github.com/Santosh7131/Aura-Preprocessor">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/aura-dark.svg">
-      <img src="assets/aura-light.svg" alt="Featured project — AURA Preprocessor: AI-powered data preprocessing platform. Groq Llama-3.3-70b recommends cleaning strategies; 15+ ML preprocessing modules on pandas and scikit-learn; FastAPI backend with a React + TypeScript front-end. 2nd place at the Wells Fargo Ideathon 2025." width="880" />
+      <img src="assets/aura-light.svg" alt="Featured project — AURA Preprocessor: AI-powered data preprocessing platform. Groq Llama-3.3-70b recommends cleaning strategies; 15+ ML preprocessing modules on pandas and scikit-learn; FastAPI backend with a React + TypeScript front-end." width="880" />
     </picture>
   </a>
 </p>

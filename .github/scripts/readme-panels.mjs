@@ -23,7 +23,9 @@ const DATA = {
       '15+ ML preprocessing modules built on pandas and scikit-learn',
       'FastAPI backend, React + TypeScript front-end, real-time progress UI',
     ],
-    award: '2nd place — Wells Fargo Ideathon 2025',
+    // Santosh 2026-08-07: the Wells Fargo Ideathon was a small event and he does not
+    // want it featured. Leave `award` empty; the panel collapses without it.
+    award: '',
     tech: ['FastAPI', 'React', 'TypeScript', 'pandas', 'scikit-learn', 'Groq'],
   },
   portfolio: { title: 'Portfolio v2', note: 'in progress — this space gets the link when it ships', pct: 40 },
@@ -110,13 +112,25 @@ function hero(t) {
 function aura(t) {
   const a = DATA.aura;
   const chipW = Math.round(textW(a.chip, 11)) + 22;
+  const B0 = 158; // first bullet baseline
   const bullets = a.bullets.map((b, i) => `
   <g>
-    <circle cx="50" cy="${132 + i * 27}" r="3" fill="${t.accent}"/>
-    <text x="66" y="${136 + i * 27}" font-family="${FONT}" font-size="14" fill="${t.muted}">${esc(b)}</text>
+    <circle cx="50" cy="${B0 - 4 + i * 27}" r="3" fill="${t.accent}"/>
+    <text x="66" y="${B0 + i * 27}" font-family="${FONT}" font-size="14" fill="${t.muted}">${esc(b)}</text>
   </g>`).join('');
-  const chips = chipRow(a.tech, t, 44, 232, W - 88);
-  const H = 232 + chips.height + 62;
+
+  // positions flow downward, so an absent award collapses cleanly
+  let y = B0 + a.bullets.length * 27;
+  let award = '';
+  if (a.award) {
+    award = `
+  <text x="44" y="${y + 6}" font-family="${FONT}" font-size="13.5" fill="${t.gold}">★  ${esc(a.award)}</text>`;
+    y += 26;
+  }
+  const chipsY = y - 6;
+  const chips = chipRow(a.tech, t, 44, chipsY, W - 88);
+  const H = chipsY + chips.height + 58;
+
   const body = `
   <text x="44" y="58" font-family="${FONT}" font-size="15" font-weight="600" fill="${t.muted}" letter-spacing="1.2">FEATURED PROJECT</text>
   <text x="44" y="98" font-family="${FONT}" font-size="30" font-weight="700" fill="${t.text}">${esc(a.title)}</text>
@@ -124,11 +138,8 @@ function aura(t) {
     <rect x="${52 + Math.round(textW(a.title, 30))}" y="76" width="${chipW}" height="24" rx="7" fill="${t.accent}" opacity="0.16"/>
     <text x="${63 + Math.round(textW(a.title, 30))}" y="92.5" font-family="${MONO}" font-size="11" font-weight="600" fill="${t.accent}" letter-spacing="0.8">${esc(a.chip)}</text>
   </g>
-  <text x="44" y="${106 + 14}" font-family="${FONT}" font-size="15" fill="${t.text}" opacity="0">.</text>
-${bullets}
-  <g>
-    <text x="44" y="${132 + a.bullets.length * 27 + 14}" font-family="${FONT}" font-size="13.5" fill="${t.gold}">★  ${esc(a.award)}</text>
-  </g>
+  <text x="44" y="126" font-family="${FONT}" font-size="15" fill="${t.text}">${esc(a.lead)}</text>
+${bullets}${award}
 ${chips.svg}
   <text x="44" y="${H - 22}" font-family="${MONO}" font-size="13" fill="${t.accent}">explore the repo  →</text>`;
   return { h: H, svg: shell(H, t, body, `Featured project: ${a.title} — ${a.lead}`) };
