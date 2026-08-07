@@ -1,8 +1,8 @@
-name: GitHub profile 3D contributions
+name: Refresh profile visuals
 
 on:
   schedule:
-    # 18:00 UTC daily (03:00 JST) — keeps the 3D graph current
+    # 18:00 UTC daily — keeps the contribution graph and profile card current
     - cron: "0 18 * * *"
   workflow_dispatch:
 
@@ -11,25 +11,40 @@ permissions:
 
 jobs:
   build:
-    name: generate-profile-3d
+    name: regenerate-profile-visuals
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
 
-      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d-settings.json
 
+      - name: Generate profile card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: node .github/scripts/profile-card.mjs
+
       - name: Commit and push if changed
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          # only the two variants the README uses; the action also writes
-          # ~10 unused presets we deliberately leave untracked
-          git add --force profile-3d-contrib/profile-3d-light.svg profile-3d-contrib/profile-3d-dark.svg
-          if git commit -m "chore: regenerate 3D contribution graph"; then
+          # the 3D action also writes ~10 unused presets, so stage only the
+          # files the README actually references
+          git add --force \
+            profile-3d-contrib/profile-3d-light.svg \
+            profile-3d-contrib/profile-3d-dark.svg \
+            profile-card/profile-card-light.svg \
+            profile-card/profile-card-dark.svg
+          if git commit -m "chore: refresh profile visuals"; then
             git push
           else
             echo "no changes to commit"

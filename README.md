@@ -42,6 +42,15 @@
   <img src="https://skillicons.dev/icons?i=python,js,ts,cpp,java,react,nodejs,express,fastapi,sklearn,mongodb,postgres,docker,git,vercel,azure&perline=8" alt="Python, JavaScript, TypeScript, C++, Java, React, Node.js, Express, FastAPI, scikit-learn, MongoDB, PostgreSQL, Docker, Git, Vercel, Azure" />
 </p>
 
+## 📊 GitHub at a glance
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile-card/profile-card-dark.svg">
+    <img src="profile-card/profile-card-light.svg" alt="Profile summary card: contributions, public repos, stars earned, followers, and language mix" width="880" />
+  </picture>
+</p>
+
 ## 🏙️ Contribution skyline
 
 <p align="center">
