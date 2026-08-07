@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="254" viewBox="0 0 900 254" role="img" aria-label="Tech stack: languages, frameworks and tools">
+  <title>Tech stack: languages, frameworks and tools</title>
+  <rect x="0.5" y="0.5" width="899" height="253" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+
+  <text x="44" y="54" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#656d76" letter-spacing="0.6">languages</text>
+    <g>
+      <rect x="44" y="68" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="55" y="85.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Python</text>
+    </g>
+    <g>
+      <rect x="115" y="68" width="90" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="126" y="85.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">JavaScript</text>
+    </g>
+    <g>
+      <rect x="213" y="68" width="90" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="224" y="85.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">TypeScript</text>
+    </g>
+    <g>
+      <rect x="311" y="68" width="42" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="322" y="85.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">C++</text>
+    </g>
+    <g>
+      <rect x="361" y="68" width="49" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="372" y="85.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Java</text>
+    </g>
+    <g>
+      <rect x="418" y="68" width="42" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="429" y="85.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">SQL</text>
+    </g>
+  <text x="44" y="124" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#656d76" letter-spacing="0.6">frameworks</text>
+    <g>
+      <rect x="44" y="138" width="56" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="55" y="155.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">React</text>
+    </g>
+    <g>
+      <rect x="108" y="138" width="70" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="119" y="155.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Node.js</text>
+    </g>
+    <g>
+      <rect x="186" y="138" width="70" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="197" y="155.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Express</text>
+    </g>
+    <g>
+      <rect x="264" y="138" width="70" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="275" y="155.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">FastAPI</text>
+    </g>
+    <g>
+      <rect x="342" y="138" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="353" y="155.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">pandas</text>
+    </g>
+    <g>
+      <rect x="413" y="138" width="104" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="424" y="155.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">scikit-learn</text>
+    </g>
+  <text x="44" y="194" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#656d76" letter-spacing="0.6">tools</text>
+    <g>
+      <rect x="44" y="208" width="83" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="55" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Azure OCR</text>
+    </g>
+    <g>
+      <rect x="135" y="208" width="77" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="146" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Groq API</text>
+    </g>
+    <g>
+      <rect x="220" y="208" width="90" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="231" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">PostgreSQL</text>
+    </g>
+    <g>
+      <rect x="318" y="208" width="70" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="329" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">MongoDB</text>
+    </g>
+    <g>
+      <rect x="396" y="208" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="407" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Docker</text>
+    </g>
+    <g>
+      <rect x="467" y="208" width="42" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="478" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Git</text>
+    </g>
+    <g>
+      <rect x="517" y="208" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="528" y="225.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Vercel</text>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="132" viewBox="0 0 900 132" role="img" aria-label="Portfolio v2 — in progress — this space gets the link when it ships">
+  <title>Portfolio v2 — in progress — this space gets the link when it ships</title>
+  <rect x="0.5" y="0.5" width="899" height="131" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <text x="44" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="600" fill="#e6edf3">Portfolio v2</text>
+  <text x="185" y="51" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#8b949e">in progress — this space gets the link when it ships</text>
+  <rect x="44" y="76" width="812" height="10" rx="5" fill="#21262d"/>
+  <rect x="44" y="76" width="325" height="10" rx="5" fill="#58a6ff"/>
+  <text x="44" y="112" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">building…</text>
+</svg>
