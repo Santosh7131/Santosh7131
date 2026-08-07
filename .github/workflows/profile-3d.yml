@@ -2,8 +2,10 @@ name: Refresh profile visuals
 
 on:
   schedule:
-    # 18:00 UTC daily — keeps the contribution graph and profile card current
-    - cron: "0 18 * * *"
+    # Every 6 hours, at :17 past. GitHub queues scheduled jobs on shared runners and
+    # the top of the hour is the most congested minute — a "0 18 * * *" run landed
+    # 4h40m late on 2026-08-06. An odd minute gets picked up sooner.
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
