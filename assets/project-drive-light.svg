@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="317" viewBox="0 0 900 317" role="img" aria-label="project: AI Learns To Drive — A neural network teaches itself to race — no hand-coded driving rules.">
+  <title>project: AI Learns To Drive — A neural network teaches itself to race — no hand-coded driving rules.</title>
+  <rect x="0.5" y="0.5" width="899" height="316" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+
+  <text x="44" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#656d76" letter-spacing="1.2">PROJECT</text>
+  <text x="44" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#1f2328">AI Learns To Drive</text>
+  <g>
+    <rect x="346" y="76" width="76" height="24" rx="7" fill="#0969da" opacity="0.16"/>
+    <text x="357" y="92.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.8">LIVE DEMO</text>
+  </g>
+  <text x="44" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1f2328">A neural network teaches itself to race — no hand-coded driving rules.</text>
+
+  <g>
+    <circle cx="50" cy="154" r="3" fill="#0969da"/>
+    <text x="66" y="158" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Trained with PPO in PyTorch; the driver is a small Transformer reading distance sensors</text>
+  </g>
+  <g>
+    <circle cx="50" cy="181" r="3" fill="#0969da"/>
+    <text x="66" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Re-implemented in TypeScript so the simulation and the network run client-side, no server</text>
+  </g>
+  <g>
+    <circle cx="50" cy="208" r="3" fill="#0969da"/>
+    <text x="66" y="212" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Wipe the brain and watch a fresh network learn to drive, live, in the browser</text>
+  </g>
+
+    <g>
+      <rect x="44" y="233" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="55" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Python</text>
+    </g>
+    <g>
+      <rect x="115" y="233" width="70" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="126" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">PyTorch</text>
+    </g>
+    <g>
+      <rect x="193" y="233" width="90" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="204" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">TypeScript</text>
+    </g>
+    <g>
+      <rect x="291" y="233" width="56" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="302" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">React</text>
+    </g>
+    <g>
+      <rect x="355" y="233" width="77" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="366" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Three.js</text>
+    </g>
+    <g>
+      <rect x="440" y="233" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="451" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">WebGPU</text>
+    </g>
+  <text x="44" y="295" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#0969da">try the live demo  →</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="317" viewBox="0 0 900 317" role="img" aria-label="featured project: AURA Preprocessor — AI-powered data preprocessing platform.">
+  <title>featured project: AURA Preprocessor — AI-powered data preprocessing platform.</title>
+  <rect x="0.5" y="0.5" width="899" height="316" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+
+  <text x="44" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#656d76" letter-spacing="1.2">FEATURED PROJECT</text>
+  <text x="44" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#1f2328">AURA Preprocessor</text>
+  <g>
+    <rect x="330" y="76" width="70" height="24" rx="7" fill="#0969da" opacity="0.16"/>
+    <text x="341" y="92.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.8">FLAGSHIP</text>
+  </g>
+  <text x="44" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1f2328">AI-powered data preprocessing platform.</text>
+
+  <g>
+    <circle cx="50" cy="154" r="3" fill="#0969da"/>
+    <text x="66" y="158" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Groq Llama-3.3-70b recommends cleaning strategies</text>
+  </g>
+  <g>
+    <circle cx="50" cy="181" r="3" fill="#0969da"/>
+    <text x="66" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">15+ ML preprocessing modules built on pandas and scikit-learn</text>
+  </g>
+  <g>
+    <circle cx="50" cy="208" r="3" fill="#0969da"/>
+    <text x="66" y="212" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">FastAPI backend, React + TypeScript front-end, real-time progress UI</text>
+  </g>
+
+    <g>
+      <rect x="44" y="233" width="70" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="55" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">FastAPI</text>
+    </g>
+    <g>
+      <rect x="122" y="233" width="56" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="133" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">React</text>
+    </g>
+    <g>
+      <rect x="186" y="233" width="90" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="197" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">TypeScript</text>
+    </g>
+    <g>
+      <rect x="284" y="233" width="63" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="295" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">pandas</text>
+    </g>
+    <g>
+      <rect x="355" y="233" width="104" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="366" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">scikit-learn</text>
+    </g>
+    <g>
+      <rect x="467" y="233" width="49" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="478" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Groq</text>
+    </g>
+  <text x="44" y="295" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#0969da">explore the repo  →</text>
+</svg>

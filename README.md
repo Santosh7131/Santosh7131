@@ -14,10 +14,26 @@
 <p align="center">
   <a href="https://github.com/Santosh7131/Aura-Preprocessor">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/aura-dark.svg">
-      <img src="assets/aura-light.svg" alt="Featured project — AURA Preprocessor: AI-powered data preprocessing platform. Groq Llama-3.3-70b recommends cleaning strategies; 15+ ML preprocessing modules on pandas and scikit-learn; FastAPI backend with a React + TypeScript front-end." width="880" />
+      <source media="(prefers-color-scheme: dark)" srcset="assets/project-aura-dark.svg">
+      <img src="assets/project-aura-light.svg" alt="Featured project — AURA Preprocessor: AI-powered data preprocessing platform. Groq Llama-3.3-70b recommends cleaning strategies; 15+ ML preprocessing modules on pandas and scikit-learn; FastAPI backend with a React + TypeScript front-end." width="880" />
     </picture>
   </a>
+</p>
+
+<p align="center">
+  <a href="https://ai-learns-to-drive.onrender.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/project-drive-dark.svg">
+      <img src="assets/project-drive-light.svg" alt="Project — AI Learns To Drive: a neural network teaches itself to race with no hand-coded driving rules. Trained with PPO in PyTorch, the driver is a small Transformer reading distance sensors; re-implemented in TypeScript so the simulation and the network run client-side with no server; you can wipe the brain and watch a fresh network learn to drive live in the browser." width="880" />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <sub>
+    <a href="https://ai-learns-to-drive.onrender.com"><b>Live demo</b></a> ·
+    <a href="https://github.com/Santosh7131/AI-Learns-To-Drive">Source</a>
+  </sub>
 </p>
 
 <p align="center">

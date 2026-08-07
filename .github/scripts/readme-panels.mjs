@@ -14,20 +14,42 @@ const DATA = {
   meta: 'B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India',
   summary:
     'I build intelligent, scalable systems — MERN applications with ML pipelines behind them.',
-  aura: {
-    title: 'AURA Preprocessor',
-    chip: 'FLAGSHIP',
-    lead: 'AI-powered data preprocessing platform.',
-    bullets: [
-      'Groq Llama-3.3-70b recommends cleaning strategies',
-      '15+ ML preprocessing modules built on pandas and scikit-learn',
-      'FastAPI backend, React + TypeScript front-end, real-time progress UI',
-    ],
-    // Santosh 2026-08-07: the Wells Fargo Ideathon was a small event and he does not
-    // want it featured. Leave `award` empty; the panel collapses without it.
-    award: '',
-    tech: ['FastAPI', 'React', 'TypeScript', 'pandas', 'scikit-learn', 'Groq'],
-  },
+  // One card per project. Sourced from `public: true` notes in the shared brain
+  // (Obsidian Vault / 30-projects). Anything not cleared there stays out of here.
+  projects: [
+    {
+      slug: 'aura',
+      eyebrow: 'FEATURED PROJECT',
+      title: 'AURA Preprocessor',
+      chip: 'FLAGSHIP',
+      lead: 'AI-powered data preprocessing platform.',
+      bullets: [
+        'Groq Llama-3.3-70b recommends cleaning strategies',
+        '15+ ML preprocessing modules built on pandas and scikit-learn',
+        'FastAPI backend, React + TypeScript front-end, real-time progress UI',
+      ],
+      // Santosh 2026-08-07: the Wells Fargo Ideathon was a small event and he does not
+      // want it featured. Leave `award` empty; the panel collapses without it.
+      award: '',
+      tech: ['FastAPI', 'React', 'TypeScript', 'pandas', 'scikit-learn', 'Groq'],
+      cta: 'explore the repo  →',
+    },
+    {
+      slug: 'drive',
+      eyebrow: 'PROJECT',
+      title: 'AI Learns To Drive',
+      chip: 'LIVE DEMO',
+      lead: 'A neural network teaches itself to race — no hand-coded driving rules.',
+      bullets: [
+        'Trained with PPO in PyTorch; the driver is a small Transformer reading distance sensors',
+        'Re-implemented in TypeScript so the simulation and the network run client-side, no server',
+        'Wipe the brain and watch a fresh network learn to drive, live, in the browser',
+      ],
+      award: '',
+      tech: ['Python', 'PyTorch', 'TypeScript', 'React', 'Three.js', 'WebGPU'],
+      cta: 'try the live demo  →',
+    },
+  ],
   portfolio: { title: 'Portfolio v2', note: 'in progress — this space gets the link when it ships', pct: 40 },
   stack: [
     { label: 'languages', items: ['Python', 'JavaScript', 'TypeScript', 'C++', 'Java', 'SQL'] },
@@ -109,8 +131,7 @@ function hero(t) {
 }
 
 // ── featured project ─────────────────────────────────────────────────────
-function aura(t) {
-  const a = DATA.aura;
+function projectCard(a, t) {
   const chipW = Math.round(textW(a.chip, 11)) + 22;
   const B0 = 158; // first bullet baseline
   const bullets = a.bullets.map((b, i) => `
@@ -132,7 +153,7 @@ function aura(t) {
   const H = chipsY + chips.height + 58;
 
   const body = `
-  <text x="44" y="58" font-family="${FONT}" font-size="15" font-weight="600" fill="${t.muted}" letter-spacing="1.2">FEATURED PROJECT</text>
+  <text x="44" y="58" font-family="${FONT}" font-size="15" font-weight="600" fill="${t.muted}" letter-spacing="1.2">${esc(a.eyebrow)}</text>
   <text x="44" y="98" font-family="${FONT}" font-size="30" font-weight="700" fill="${t.text}">${esc(a.title)}</text>
   <g>
     <rect x="${52 + Math.round(textW(a.title, 30))}" y="76" width="${chipW}" height="24" rx="7" fill="${t.accent}" opacity="0.16"/>
@@ -141,8 +162,8 @@ function aura(t) {
   <text x="44" y="126" font-family="${FONT}" font-size="15" fill="${t.text}">${esc(a.lead)}</text>
 ${bullets}${award}
 ${chips.svg}
-  <text x="44" y="${H - 22}" font-family="${MONO}" font-size="13" fill="${t.accent}">explore the repo  →</text>`;
-  return { h: H, svg: shell(H, t, body, `Featured project: ${a.title} — ${a.lead}`) };
+  <text x="44" y="${H - 22}" font-family="${MONO}" font-size="13" fill="${t.accent}">${esc(a.cta)}</text>`;
+  return { h: H, svg: shell(H, t, body, `${a.eyebrow.toLowerCase()}: ${a.title} — ${a.lead}`) };
 }
 
 // ── portfolio placeholder ────────────────────────────────────────────────
@@ -187,11 +208,19 @@ function badge(label, bg, fg) {
 
 // ── write ────────────────────────────────────────────────────────────────
 mkdirSync('assets', { recursive: true });
-const panels = { hero, aura, portfolio, stack };
+const panels = { hero, portfolio, stack };
 for (const [name, fn] of Object.entries(panels)) {
   for (const t of Object.values(THEMES)) {
     const { svg, h } = fn(t);
     const f = `assets/${name}-${t.key}.svg`;
+    writeFileSync(f, svg, 'utf8');
+    if (t.key === 'dark') console.log(`${f.padEnd(30)} ${W}x${h}`);
+  }
+}
+for (const proj of DATA.projects) {
+  for (const t of Object.values(THEMES)) {
+    const { svg, h } = projectCard(proj, t);
+    const f = `assets/project-${proj.slug}-${t.key}.svg`;
     writeFileSync(f, svg, 'utf8');
     if (t.key === 'dark') console.log(`${f.padEnd(30)} ${W}x${h}`);
   }
