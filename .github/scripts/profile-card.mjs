@@ -98,7 +98,9 @@ const round = (n, d = 1) => Number(n.toFixed(d));
 // merges the hero and the stats into one block — there is no second name section.
 const ID = {
   name: 'Santosh Kumaar',
-  role: 'Full Stack  ×  Machine Learning',
+  // Settled 2026-08-07 in about-me: this is how he is presented publicly,
+  // and it should hold for every public artefact.
+  role: 'Machine Learning Engineer',
   meta: 'B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India',
   // Drawn inside the panel, so these are copyable text rather than links — an SVG
   // served as an image cannot carry a working hyperlink. Only contacts Santosh has

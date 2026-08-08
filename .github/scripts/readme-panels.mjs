@@ -46,18 +46,19 @@ const DATA = {
     },
     {
       slug: 'portfolio',
-      eyebrow: 'IN PROGRESS',
-      title: 'Portfolio v2',
+      eyebrow: 'PROJECT',
+      title: 'Portfolio',
+      // Wording agreed 2026-08-07 in the personal-website note. Deliberately omits
+      // the easter egg — that note says it is only worth anything as a discovery.
       lead: 'A scroll-driven portfolio, built as its own work sample.',
       bullets: [
         'Full-height scenes where scrolling scrubs an authored timeline',
         'Every animation gated on a reduced-motion preference, with an on-page toggle',
-        'Seven scenes built and compiling clean. Still no URL — that part is on me.',
+        'Two scenes added in August so it introduces the person, not just the craft',
       ],
       award: '',
-      tech: ['React', 'TypeScript', 'Vite', 'GSAP', 'Lenis'],
-      cta: 'this becomes a link the day it ships',
-      inactive: true,   // nothing to click yet, so the cta must not look like one
+      tech: ['React 19', 'TypeScript', 'Vite', 'GSAP', 'Lenis'],
+      cta: 'visit the site  →'
     },
   ],
   stack: [

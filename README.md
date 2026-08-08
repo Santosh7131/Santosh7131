@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/identity-dark.svg">
-    <img src="assets/identity-light.svg" alt="Santosh Kumaar — Full Stack × Machine Learning. B.Tech CSE @ SRM · BS Computer Science @ IIT Madras · Chennai, India. Contributions, public repos, stars earned, followers, and language mix." width="880" />
+    <img src="assets/identity-light.svg" alt="Santosh Kumaar — Machine Learning Engineer. B.Tech CSE @ SRM · BS Computer Science @ IIT Madras · Chennai, India. Contributions, public repos, stars earned, followers, and language mix." width="880" />
   </picture>
 </p>
 
@@ -24,10 +24,12 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/project-portfolio-dark.svg">
-    <img src="assets/project-portfolio-light.svg" alt="In progress — Portfolio v2: a scroll-driven portfolio built as its own work sample. Full-height scenes where scrolling scrubs an authored timeline; every animation gated on a reduced-motion preference with an on-page toggle; seven scenes built and compiling, not yet deployed." width="880" />
-  </picture>
+  <a href="https://portfolio-v2-two-snowy-32.vercel.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/project-portfolio-dark.svg">
+      <img src="assets/project-portfolio-light.svg" alt="Project — Portfolio: a scroll-driven portfolio built as its own work sample. Full-height scenes where scrolling scrubs an authored timeline; every animation gated on a reduced-motion preference with an on-page toggle; two scenes added in August so it introduces the person, not just the craft." width="880" />
+    </picture>
+  </a>
 </p>
 
 <p align="center">
