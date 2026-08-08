@@ -31,8 +31,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/portfolio-dark.svg">
-    <img src="assets/portfolio-light.svg" alt="Portfolio v2 — in progress; this space gets the link when it ships" width="880" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/project-portfolio-dark.svg">
+    <img src="assets/project-portfolio-light.svg" alt="In progress — Portfolio v2: a scroll-driven portfolio built as its own work sample. Full-height scenes where scrolling scrubs an authored timeline; every animation gated on a reduced-motion preference with an on-page toggle; seven scenes built and compiling, not yet deployed." width="880" />
   </picture>
 </p>
 

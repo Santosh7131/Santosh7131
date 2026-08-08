@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="317" viewBox="0 0 900 317" role="img" aria-label="in progress: Portfolio v2 — A scroll-driven portfolio, built as its own work sample.">
+  <title>in progress: Portfolio v2 — A scroll-driven portfolio, built as its own work sample.</title>
+  <rect x="0.5" y="0.5" width="899" height="316" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+
+  <text x="44" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#656d76" letter-spacing="1.2">IN PROGRESS</text>
+  <text x="44" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#1f2328">Portfolio v2</text>
+  <g>
+    <rect x="248" y="76" width="88" height="24" rx="7" fill="#0969da" opacity="0.16"/>
+    <text x="259" y="92.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" font-weight="600" fill="#0969da" letter-spacing="0.8">NOT SHIPPED</text>
+  </g>
+  <text x="44" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1f2328">A scroll-driven portfolio, built as its own work sample.</text>
+
+  <g>
+    <circle cx="50" cy="154" r="3" fill="#0969da"/>
+    <text x="66" y="158" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Full-height scenes where scrolling scrubs an authored timeline</text>
+  </g>
+  <g>
+    <circle cx="50" cy="181" r="3" fill="#0969da"/>
+    <text x="66" y="185" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Every animation gated on a reduced-motion preference, with an on-page toggle</text>
+  </g>
+  <g>
+    <circle cx="50" cy="208" r="3" fill="#0969da"/>
+    <text x="66" y="212" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">Seven scenes built and compiling clean. Still no URL — that part is on me.</text>
+  </g>
+
+    <g>
+      <rect x="44" y="233" width="56" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="55" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">React</text>
+    </g>
+    <g>
+      <rect x="108" y="233" width="90" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="119" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">TypeScript</text>
+    </g>
+    <g>
+      <rect x="206" y="233" width="49" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="217" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Vite</text>
+    </g>
+    <g>
+      <rect x="263" y="233" width="49" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="274" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">GSAP</text>
+    </g>
+    <g>
+      <rect x="320" y="233" width="56" height="26" rx="7" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="331" y="250.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#656d76">Lenis</text>
+    </g>
+  <text x="44" y="295" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#656d76">this becomes a link the day it ships</text>
+</svg>

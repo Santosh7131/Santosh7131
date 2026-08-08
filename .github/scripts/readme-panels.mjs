@@ -46,8 +46,23 @@ const DATA = {
       tech: ['Python', 'PyTorch', 'TypeScript', 'React', 'Three.js', 'WebGPU'],
       cta: 'try the live demo  →',
     },
+    {
+      slug: 'portfolio',
+      eyebrow: 'IN PROGRESS',
+      title: 'Portfolio v2',
+      chip: 'NOT SHIPPED',
+      lead: 'A scroll-driven portfolio, built as its own work sample.',
+      bullets: [
+        'Full-height scenes where scrolling scrubs an authored timeline',
+        'Every animation gated on a reduced-motion preference, with an on-page toggle',
+        'Seven scenes built and compiling clean. Still no URL — that part is on me.',
+      ],
+      award: '',
+      tech: ['React', 'TypeScript', 'Vite', 'GSAP', 'Lenis'],
+      cta: 'this becomes a link the day it ships',
+      inactive: true,   // nothing to click yet, so the cta must not look like one
+    },
   ],
-  portfolio: { title: 'Portfolio v2', note: 'in progress — this space gets the link when it ships', pct: 40 },
   stack: [
     { label: 'languages', items: ['Python', 'JavaScript', 'TypeScript', 'C++', 'Java', 'SQL'] },
     { label: 'frameworks', items: ['React', 'Node.js', 'Express', 'FastAPI', 'pandas', 'scikit-learn'] },
@@ -138,22 +153,8 @@ function projectCard(a, t) {
   <text x="44" y="126" font-family="${FONT}" font-size="15" fill="${t.text}">${esc(a.lead)}</text>
 ${bullets}${award}
 ${chips.svg}
-  <text x="44" y="${H - 22}" font-family="${MONO}" font-size="13" fill="${t.accent}">${esc(a.cta)}</text>`;
+  <text x="44" y="${H - 22}" font-family="${MONO}" font-size="13" fill="${a.inactive ? t.muted : t.accent}">${esc(a.cta)}</text>`;
   return { h: H, svg: shell(H, t, body, `${a.eyebrow.toLowerCase()}: ${a.title} — ${a.lead}`) };
-}
-
-// ── portfolio placeholder ────────────────────────────────────────────────
-function portfolio(t) {
-  const H = 132;
-  const p = DATA.portfolio;
-  const barW = W - 88;
-  const body = `
-  <text x="44" y="52" font-family="${FONT}" font-size="20" font-weight="600" fill="${t.text}">${esc(p.title)}</text>
-  <text x="${54 + Math.round(textW(p.title, 20))}" y="51" font-family="${MONO}" font-size="12.5" fill="${t.muted}">${esc(p.note)}</text>
-  <rect x="44" y="76" width="${barW}" height="10" rx="5" fill="${t.track}"/>
-  <rect x="44" y="76" width="${Math.round((barW * p.pct) / 100)}" height="10" rx="5" fill="${t.accent}"/>
-  <text x="44" y="112" font-family="${MONO}" font-size="12" fill="${t.muted}">building…</text>`;
-  return { h: H, svg: shell(H, t, body, `${p.title} — ${p.note}`) };
 }
 
 // ── tech stack ───────────────────────────────────────────────────────────
@@ -189,7 +190,7 @@ function badge(label, t, opts = {}) {
 
 // ── write ────────────────────────────────────────────────────────────────
 mkdirSync('assets', { recursive: true });
-const panels = { portfolio, stack };
+const panels = { stack };
 for (const [name, fn] of Object.entries(panels)) {
   for (const t of Object.values(THEMES)) {
     const { svg, h } = fn(t);
