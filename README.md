@@ -46,6 +46,3 @@
   </picture>
 </p>
 
-<p align="center">
-  <sub>refreshed every few hours — the 3D graph via <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a>, the identity panel by a script in this repo</sub>
-</p>
