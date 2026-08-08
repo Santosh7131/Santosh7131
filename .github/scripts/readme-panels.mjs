@@ -170,14 +170,19 @@ function stack(t) {
   return { h: H, svg: shell(H, t, body, 'Tech stack: languages, frameworks and tools') };
 }
 
-// ── clickable contact badges (theme-agnostic: solid fills) ───────────────
-function badge(label, bg, fg) {
+// ── contact badges ──────────────────────────────────────────────────────
+// Bordered and quiet, matching the tech chips — not solid colour pills, which
+// shout next to the panels. Themed, so each needs a dark and a light variant.
+const monoW = (str, size) => str.length * size * 0.6;
+
+function badge(label, t, opts = {}) {
   const fs = 12.5, h = 34;
-  const w = Math.round(textW(label, fs)) + 40;
+  const w = Math.round(monoW(label, fs)) + 32;
+  const color = opts.inactive ? t.muted : t.accent;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(label)}">
   <title>${esc(label)}</title>
-  <rect width="${w}" height="${h}" rx="8" fill="${bg}"/>
-  <text x="${w / 2}" y="${h / 2 + 4.5}" text-anchor="middle" font-family="${FONT}" font-size="${fs}" font-weight="600" fill="${fg}" letter-spacing="0.3">${esc(label)}</text>
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="8" fill="${t.chipBg}" stroke="${t.border}" stroke-width="1"/>
+  <text x="${w / 2}" y="${h / 2 + 4.5}" text-anchor="middle" font-family="${MONO}" font-size="${fs}" fill="${color}">${esc(label)}</text>
 </svg>
 `;
 }
@@ -202,11 +207,15 @@ for (const proj of DATA.projects) {
   }
 }
 const badges = [
-  ['badge-email.svg', 'Email', '#d64545', '#ffffff'],
-  ['badge-linkedin.svg', 'LinkedIn', '#0a66c2', '#ffffff'],
-  ['badge-portfolio.svg', 'Portfolio — soon', '#6e5494', '#ffffff'],
+  ['email', 'email', {}],
+  ['linkedin', 'linkedin', {}],
+  // no URL yet, so it must not look clickable
+  ['portfolio', 'portfolio — soon', { inactive: true }],
 ];
-for (const [f, label, bg, fg] of badges) {
-  writeFileSync(`assets/${f}`, badge(label, bg, fg), 'utf8');
-  console.log(`assets/${f}`);
+for (const [name, label, opts] of badges) {
+  for (const t of Object.values(THEMES)) {
+    const f = `assets/badge-${name}-${t.key}.svg`;
+    writeFileSync(f, badge(label, t, opts), 'utf8');
+    if (t.key === 'dark') console.log(f);
+  }
 }

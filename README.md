@@ -6,9 +6,9 @@
 </p>
 
 <p align="center">
-  <a href="mailto:rsantoshkumaar2005@gmail.com"><img src="assets/badge-email.svg" alt="Email" height="34" /></a>
-  <a href="https://www.linkedin.com/in/santosh7131"><img src="assets/badge-linkedin.svg" alt="LinkedIn" height="34" /></a>
-  <img src="assets/badge-portfolio.svg" alt="Portfolio — coming soon" height="34" />
+  <a href="mailto:rsantoshkumaar2005@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-email-dark.svg"><img src="assets/badge-email-light.svg" alt="Email" height="34" /></picture></a>
+  <a href="https://www.linkedin.com/in/santosh7131"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-linkedin-dark.svg"><img src="assets/badge-linkedin-light.svg" alt="LinkedIn" height="34" /></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-portfolio-dark.svg"><img src="assets/badge-portfolio-light.svg" alt="Portfolio — coming soon" height="34" /></picture>
 </p>
 
 <p align="center">
@@ -27,13 +27,6 @@
       <img src="assets/project-drive-light.svg" alt="Project — AI Learns To Drive: a neural network teaches itself to race with no hand-coded driving rules. Trained with PPO in PyTorch, the driver is a small Transformer reading distance sensors; re-implemented in TypeScript so the simulation and the network run client-side with no server; you can wipe the brain and watch a fresh network learn to drive live in the browser." width="880" />
     </picture>
   </a>
-</p>
-
-<p align="center">
-  <sub>
-    <a href="https://ai-learns-to-drive.onrender.com"><b>Live demo</b></a> ·
-    <a href="https://github.com/Santosh7131/AI-Learns-To-Drive">Source</a>
-  </sub>
 </p>
 
 <p align="center">
