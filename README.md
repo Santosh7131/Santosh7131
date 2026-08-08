@@ -9,7 +9,7 @@
   <a href="https://github.com/Santosh7131/Aura-Preprocessor">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/project-aura-dark.svg">
-      <img src="assets/project-aura-light.svg" alt="Featured project — AURA Preprocessor: AI-powered data preprocessing platform. Groq Llama-3.3-70b recommends cleaning strategies; 15+ ML preprocessing modules on pandas and scikit-learn; FastAPI backend with a React + TypeScript front-end." width="880" />
+      <img src="assets/project-aura-light.svg" alt="Featured project — AURA Preprocessor: LLM-guided data preprocessing with a human in the loop. A Groq LLM reads a raw CSV or Excel dataset and proposes cleaning strategies; you choose which fixes to apply; it outputs a cleaned dataset and suggests suitable ML models. Built with Python, Flask, pandas, scikit-learn and Groq." width="880" />
     </picture>
   </a>
 </p>

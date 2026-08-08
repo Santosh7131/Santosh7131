@@ -19,16 +19,20 @@ const DATA = {
       slug: 'aura',
       eyebrow: 'FEATURED PROJECT',
       title: 'AURA Preprocessor',
-      lead: 'AI-powered data preprocessing platform.',
+      // Corrected 2026-08-09 against the actual repo (Santosh7131/Aura-Preprocessor,
+      // "AutoDataPreprocessor"): a Flask web app + CLI on pandas/scikit-learn/Groq.
+      // The earlier card claimed FastAPI + React/TypeScript + Llama-3.3-70b, none of
+      // which the repo contains — every line here traces to its README.
+      lead: 'LLM-guided data preprocessing, with a human in the loop.',
       bullets: [
-        'Groq Llama-3.3-70b recommends cleaning strategies',
-        '15+ ML preprocessing modules built on pandas and scikit-learn',
-        'FastAPI backend, React + TypeScript front-end, real-time progress UI',
+        'A Groq LLM reads a raw CSV/Excel dataset and proposes cleaning strategies',
+        'You choose which fixes to apply — interactive, not blind automation',
+        'Outputs a cleaned dataset and suggests suitable ML models',
       ],
       // Santosh 2026-08-07: the Wells Fargo Ideathon was a small event and he does not
       // want it featured. Leave `award` empty; the panel collapses without it.
       award: '',
-      tech: ['FastAPI', 'React', 'TypeScript', 'pandas', 'scikit-learn', 'Groq'],
+      tech: ['Python', 'Flask', 'pandas', 'scikit-learn', 'Groq'],
       cta: 'explore the repo  →',
     },
     {
