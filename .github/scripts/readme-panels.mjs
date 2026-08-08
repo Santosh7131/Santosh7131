@@ -7,6 +7,7 @@
  *   node .github/scripts/readme-panels.mjs
  */
 import { writeFileSync, mkdirSync } from 'node:fs';
+import { iconTile } from './skill-icons.mjs';
 
 const DATA = {
   // Name / role / education now live in profile-card.mjs, which renders the single
@@ -151,17 +152,30 @@ ${chips.svg}
 }
 
 // ── tech stack ───────────────────────────────────────────────────────────
-function stack(t) {
-  let y = 54, body = '';
-  for (const row of DATA.stack) {
-    body += `
-  <text x="44" y="${y}" font-family="${MONO}" font-size="12" fill="${t.muted}" letter-spacing="0.6">${esc(row.label)}</text>`;
-    const chips = chipRow(row.items, t, 44, y + 14, W - 88);
-    body += chips.svg;
-    y += 14 + chips.height + 30;
+const TILE = 54, TGAP = 12;
+
+/** tiles laid out left→right with wrapping; returns {svg, height} */
+function iconRow(items, t, x0, y0, maxW) {
+  let x = x0, y = y0, out = '';
+  for (const it of items) {
+    if (x + TILE > x0 + maxW) { x = x0; y += TILE + TGAP; }
+    out += iconTile(it, t, x, y, TILE, MONO);
+    x += TILE + TGAP;
   }
-  const H = y - 10;
-  return { h: H, svg: shell(H, t, body, 'Tech stack: languages, frameworks and tools') };
+  return { svg: out, height: y + TILE - y0 };
+}
+
+/**
+ * One continuous grid, no category headings — chosen 2026-08-09.
+ * DATA.stack keeps its three groups only to fix the reading order
+ * (languages, then frameworks, then tools); the labels aren't drawn.
+ */
+function stack(t) {
+  const all = DATA.stack.flatMap((r) => r.items);
+  const tiles = iconRow(all, t, 44, 46, W - 88);
+  const H = 46 + tiles.height + 46;
+  const label = `Tech stack: ${all.join(', ')}`;
+  return { h: H, svg: shell(H, t, tiles.svg, label) };
 }
 
 // ── write ────────────────────────────────────────────────────────────────
