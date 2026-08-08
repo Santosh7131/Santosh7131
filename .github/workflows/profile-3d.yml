@@ -44,8 +44,8 @@ jobs:
           git add --force \
             profile-3d-contrib/profile-3d-light.svg \
             profile-3d-contrib/profile-3d-dark.svg \
-            profile-card/profile-card-light.svg \
-            profile-card/profile-card-dark.svg
+            assets/identity-light.svg \
+            assets/identity-dark.svg
           if git commit -m "chore: refresh profile visuals"; then
             git push
           else
