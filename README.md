@@ -6,14 +6,6 @@
 </p>
 
 <p align="center">
-  <a href="mailto:rsantoshkumaar2005@gmail.com">email</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/santosh7131">linkedin</a>
-  &nbsp;·&nbsp;
-  <sub>portfolio — soon</sub>
-</p>
-
-<p align="center">
   <a href="https://github.com/Santosh7131/Aura-Preprocessor">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/project-aura-dark.svg">

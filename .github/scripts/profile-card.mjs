@@ -100,6 +100,10 @@ const ID = {
   name: 'Santosh Kumaar',
   role: 'Full Stack  ×  Machine Learning',
   meta: 'B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India',
+  // Drawn inside the panel, so these are copyable text rather than links — an SVG
+  // served as an image cannot carry a working hyperlink. Only contacts Santosh has
+  // cleared for public use belong here.
+  contact: 'rsantoshkumaar2005@gmail.com   ·   linkedin.com/in/santosh7131   ·   portfolio — soon',
 };
 
 const THEMES = {
@@ -183,7 +187,7 @@ function card(t) {
       .map(([n, w]) => `${fmt(n)} ${w}${n === 1 ? '' : 's'}`)
       .join('  ·  ') + '  (past year)';
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(ID.name)} — ${esc(ID.role)}. ${esc(ID.meta)}. ${esc(activity)}.">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(ID.name)} — ${esc(ID.role)}. ${esc(ID.meta)}. Contact: ${esc(ID.contact)}. ${esc(activity)}.">
   <title>${esc(ID.name)} — ${esc(ID.role)}</title>
   <defs>
     <clipPath id="barClip"><rect x="${barX}" y="${barY}" width="${barW}" height="${barH}" rx="5"/></clipPath>
@@ -196,7 +200,7 @@ function card(t) {
   <rect x="44" y="146" width="180" height="4" rx="2" fill="${t.accent}"/>
   <text x="44" y="182" font-family="${MONO}" font-size="18" fill="${t.accent}">${esc(ID.role)}</text>
   <text x="44" y="208" font-family="${FONT}" font-size="13" fill="${t.muted}">${esc(ID.meta)}</text>
-  <text x="44" y="230" font-family="${FONT}" font-size="13" fill="${t.accent}">${esc(activity)}  ·  @${esc(u.login)}</text>
+  <text x="44" y="230" font-family="${FONT}" font-size="13" fill="${t.muted}">${esc(ID.contact)}</text>
 ${tiles}
   <text x="${barX}" y="${barY - 14}" font-family="${FONT}" font-size="11" fill="${t.muted}" letter-spacing="0.4">language mix</text>
   <rect x="${barX}" y="${barY}" width="${barW}" height="${barH}" rx="5" fill="${t.track}"/>
