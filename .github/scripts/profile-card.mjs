@@ -94,20 +94,29 @@ const esc = (s) =>
 const fmt = (n) => n.toLocaleString('en-US');
 const round = (n, d = 1) => Number(n.toFixed(d));
 
+// Static identity strings. Kept here (not in readme-panels.mjs) because this panel
+// merges the hero and the stats into one block — there is no second name section.
+const ID = {
+  name: 'Santosh Kumaar',
+  role: 'Full Stack  ×  Machine Learning',
+  meta: 'B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India',
+};
+
 const THEMES = {
   dark: {
-    file: 'profile-card-dark.svg',
+    file: 'identity-dark.svg',
     bg: '#0d1117', panel: '#161b22', border: '#30363d',
     text: '#e6edf3', muted: '#8b949e', accent: '#58a6ff', track: '#21262d',
   },
   light: {
-    file: 'profile-card-light.svg',
+    file: 'identity-light.svg',
     bg: '#ffffff', panel: '#f6f8fa', border: '#d0d7de',
     text: '#1f2328', muted: '#656d76', accent: '#0969da', track: '#eaeef2',
   },
 };
 
-const W = 900, H = 336;
+const W = 900, H = 438;
+const MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace";
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
 
 function card(t) {
@@ -119,7 +128,7 @@ function card(t) {
   ];
 
   // stat tiles
-  const tileW = 196, gap = 12, x0 = 32, tileY = 148, tileH = 66;
+  const tileW = 196, gap = 12, x0 = 32, tileY = 252, tileH = 66;
   const tiles = stats.map((s, i) => {
     const x = x0 + i * (tileW + gap);
     return `
@@ -131,7 +140,7 @@ function card(t) {
   }).join('');
 
   // language bar — segments are clipped to a rounded track so both ends curve
-  const barX = 32, barY = 262, barW = W - 64, barH = 10;
+  const barX = 32, barY = 364, barW = W - 64, barH = 10;
   const drawn = otherPct > 0.05 ? [...langs, { name: 'other', pct: otherPct, color: t.muted }] : langs;
   let cx = barX;
   const segs = drawn.map((l) => {
@@ -154,7 +163,14 @@ function card(t) {
     return g;
   }).join('');
 
-  const subtitle = [u.location, `@${u.login}`].filter(Boolean).join('  ·  ');
+  // faint contribution-grid motif, top right — carried over from the hero panel
+  let grid = '';
+  for (let r = 0; r < 5; r++) {
+    for (let c = 0; c < 12; c++) {
+      const on = (r * 7 + c * 5) % 4;
+      grid += `<rect x="${624 + c * 21}" y="${34 + r * 21}" width="15" height="15" rx="3" fill="${t.accent}" opacity="${on === 0 ? 0.5 : on === 1 ? 0.28 : 0.1}"/>`;
+    }
+  }
 
   // only show counts that are actually non-zero — a printed "0" reads as a gap
   const cc = u.contributionsCollection;
@@ -167,20 +183,20 @@ function card(t) {
       .map(([n, w]) => `${fmt(n)} ${w}${n === 1 ? '' : 's'}`)
       .join('  ·  ') + '  (past year)';
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub profile summary for ${esc(u.login)}">
-  <title>GitHub profile summary for ${esc(u.name || u.login)}</title>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(ID.name)} — ${esc(ID.role)}. ${esc(ID.meta)}. ${esc(activity)}.">
+  <title>${esc(ID.name)} — ${esc(ID.role)}</title>
   <defs>
-    <clipPath id="avatarClip"><circle cx="72" cy="76" r="40"/></clipPath>
     <clipPath id="barClip"><rect x="${barX}" y="${barY}" width="${barW}" height="${barH}" rx="5"/></clipPath>
   </defs>
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="${t.bg}" stroke="${t.border}" stroke-width="1"/>
+  <g>${grid}</g>
 
-  <image href="${avatarData}" x="32" y="36" width="80" height="80" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
-  <circle cx="72" cy="76" r="40.5" fill="none" stroke="${t.border}" stroke-width="1.5"/>
-
-  <text x="132" y="66" font-family="${FONT}" font-size="26" font-weight="600" fill="${t.text}">${esc(u.name || u.login)}</text>
-  <text x="132" y="92" font-family="${FONT}" font-size="13.5" fill="${t.muted}">${esc(subtitle)}</text>
-  <text x="132" y="114" font-family="${FONT}" font-size="13" fill="${t.accent}">${esc(activity)}</text>
+  <text x="44" y="72" font-family="${MONO}" font-size="14" fill="${t.muted}">hi, i'm</text>
+  <text x="42" y="128" font-family="${FONT}" font-size="54" font-weight="700" fill="${t.text}" letter-spacing="-1">${esc(ID.name)}</text>
+  <rect x="44" y="146" width="180" height="4" rx="2" fill="${t.accent}"/>
+  <text x="44" y="182" font-family="${MONO}" font-size="18" fill="${t.accent}">${esc(ID.role)}</text>
+  <text x="44" y="208" font-family="${FONT}" font-size="13" fill="${t.muted}">${esc(ID.meta)}</text>
+  <text x="44" y="230" font-family="${FONT}" font-size="13" fill="${t.accent}">${esc(activity)}  ·  @${esc(u.login)}</text>
 ${tiles}
   <text x="${barX}" y="${barY - 14}" font-family="${FONT}" font-size="11" fill="${t.muted}" letter-spacing="0.4">language mix</text>
   <rect x="${barX}" y="${barY}" width="${barW}" height="${barH}" rx="5" fill="${t.track}"/>
@@ -192,10 +208,10 @@ ${legend}
 `;
 }
 
-mkdirSync('profile-card', { recursive: true });
+mkdirSync('assets', { recursive: true });
 for (const t of Object.values(THEMES)) {
-  writeFileSync(`profile-card/${t.file}`, card(t), 'utf8');
-  console.log('wrote profile-card/' + t.file);
+  writeFileSync(`assets/${t.file}`, card(t), 'utf8');
+  console.log('wrote assets/' + t.file);
 }
 console.log(`data: ${contributions} contributions, ${u.repositories.totalCount} repos, ${stars} stars, ${u.followers.totalCount} followers`);
 console.log('languages:', langs.map((l) => `${l.name} ${round(l.pct)}%`).join(', '));

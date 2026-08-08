@@ -9,11 +9,8 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 
 const DATA = {
-  name: 'Santosh Kumaar',
-  role: 'Full Stack  ×  Machine Learning',
-  meta: 'B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India',
-  summary:
-    'I build intelligent, scalable systems — MERN applications with ML pipelines behind them.',
+  // Name / role / education now live in profile-card.mjs, which renders the single
+  // identity panel (hero + live stats + language bar). Kept in one place on purpose.
   // One card per project. Sourced from `public: true` notes in the shared brain
   // (Obsidian Vault / 30-projects). Anything not cleared there stays out of here.
   projects: [
@@ -109,27 +106,6 @@ function chipRow(items, t, x0, y0, maxW, opts = {}) {
   return { svg: out, height: y + h - y0 };
 }
 
-// ── hero ─────────────────────────────────────────────────────────────────
-function hero(t) {
-  const H = 232;
-  // faint contribution-grid motif, top right
-  let grid = '';
-  for (let r = 0; r < 5; r++) {
-    for (let c = 0; c < 12; c++) {
-      const on = (r * 7 + c * 5) % 4;
-      grid += `<rect x="${624 + c * 21}" y="${34 + r * 21}" width="15" height="15" rx="3" fill="${t.accent}" opacity="${on === 0 ? 0.5 : on === 1 ? 0.28 : 0.1}"/>`;
-    }
-  }
-  const body = `
-  <g>${grid}</g>
-  <text x="44" y="72" font-family="${MONO}" font-size="14" fill="${t.muted}">hi, i'm</text>
-  <text x="42" y="128" font-family="${FONT}" font-size="54" font-weight="700" fill="${t.text}" letter-spacing="-1">${esc(DATA.name)}</text>
-  <rect x="44" y="146" width="180" height="4" rx="2" fill="${t.accent}"/>
-  <text x="44" y="182" font-family="${MONO}" font-size="18" fill="${t.accent}">${esc(DATA.role)}</text>
-  <text x="44" y="208" font-family="${FONT}" font-size="13" fill="${t.muted}">${esc(DATA.meta)}</text>`;
-  return { h: H, svg: shell(H, t, body, `${DATA.name} — ${DATA.role}`) };
-}
-
 // ── featured project ─────────────────────────────────────────────────────
 function projectCard(a, t) {
   const chipW = Math.round(textW(a.chip, 11)) + 22;
@@ -208,7 +184,7 @@ function badge(label, bg, fg) {
 
 // ── write ────────────────────────────────────────────────────────────────
 mkdirSync('assets', { recursive: true });
-const panels = { hero, portfolio, stack };
+const panels = { portfolio, stack };
 for (const [name, fn] of Object.entries(panels)) {
   for (const t of Object.values(THEMES)) {
     const { svg, h } = fn(t);

@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-    <img src="assets/hero-light.svg" alt="Santosh Kumaar — Full Stack × Machine Learning. B.Tech CSE @ SRM · BS Computer Science @ IIT Madras · Chennai, India" width="880" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/identity-dark.svg">
+    <img src="assets/identity-light.svg" alt="Santosh Kumaar — Full Stack × Machine Learning. B.Tech CSE @ SRM · BS Computer Science @ IIT Madras · Chennai, India. Contributions, public repos, stars earned, followers, and language mix." width="880" />
   </picture>
 </p>
 
@@ -50,15 +50,6 @@
   </picture>
 </p>
 
-## 📊 GitHub at a glance
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="profile-card/profile-card-dark.svg">
-    <img src="profile-card/profile-card-light.svg" alt="Profile summary card: contributions, public repos, stars earned, followers, and language mix" width="880" />
-  </picture>
-</p>
-
 ## 🏙️ Contribution skyline
 
 <p align="center">
@@ -69,5 +60,5 @@
 </p>
 
 <p align="center">
-  <sub>regenerated daily — the 3D graph via <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a>, the card by a script in this repo</sub>
+  <sub>refreshed every few hours — the 3D graph via <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a>, the identity panel by a script in this repo</sub>
 </p>
