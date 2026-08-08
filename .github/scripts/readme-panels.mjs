@@ -18,7 +18,6 @@ const DATA = {
       slug: 'aura',
       eyebrow: 'FEATURED PROJECT',
       title: 'AURA Preprocessor',
-      chip: 'FLAGSHIP',
       lead: 'AI-powered data preprocessing platform.',
       bullets: [
         'Groq Llama-3.3-70b recommends cleaning strategies',
@@ -35,7 +34,6 @@ const DATA = {
       slug: 'drive',
       eyebrow: 'PROJECT',
       title: 'AI Learns To Drive',
-      chip: 'LIVE DEMO',
       lead: 'A neural network teaches itself to race — no hand-coded driving rules.',
       bullets: [
         'Trained with PPO in PyTorch; the driver is a small Transformer reading distance sensors',
@@ -50,7 +48,6 @@ const DATA = {
       slug: 'portfolio',
       eyebrow: 'IN PROGRESS',
       title: 'Portfolio v2',
-      chip: 'NOT SHIPPED',
       lead: 'A scroll-driven portfolio, built as its own work sample.',
       bullets: [
         'Full-height scenes where scrolling scrubs an authored timeline',
@@ -123,7 +120,6 @@ function chipRow(items, t, x0, y0, maxW, opts = {}) {
 
 // ── featured project ─────────────────────────────────────────────────────
 function projectCard(a, t) {
-  const chipW = Math.round(textW(a.chip, 11)) + 22;
   const B0 = 158; // first bullet baseline
   const bullets = a.bullets.map((b, i) => `
   <g>
@@ -146,10 +142,6 @@ function projectCard(a, t) {
   const body = `
   <text x="44" y="58" font-family="${FONT}" font-size="15" font-weight="600" fill="${t.muted}" letter-spacing="1.2">${esc(a.eyebrow)}</text>
   <text x="44" y="98" font-family="${FONT}" font-size="30" font-weight="700" fill="${t.text}">${esc(a.title)}</text>
-  <g>
-    <rect x="${52 + Math.round(textW(a.title, 30))}" y="76" width="${chipW}" height="24" rx="7" fill="${t.accent}" opacity="0.16"/>
-    <text x="${63 + Math.round(textW(a.title, 30))}" y="92.5" font-family="${MONO}" font-size="11" font-weight="600" fill="${t.accent}" letter-spacing="0.8">${esc(a.chip)}</text>
-  </g>
   <text x="44" y="126" font-family="${FONT}" font-size="15" fill="${t.text}">${esc(a.lead)}</text>
 ${bullets}${award}
 ${chips.svg}

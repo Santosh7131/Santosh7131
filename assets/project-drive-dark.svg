@@ -4,10 +4,6 @@
 
   <text x="44" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#8b949e" letter-spacing="1.2">PROJECT</text>
   <text x="44" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e6edf3">AI Learns To Drive</text>
-  <g>
-    <rect x="346" y="76" width="76" height="24" rx="7" fill="#58a6ff" opacity="0.16"/>
-    <text x="357" y="92.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" font-weight="600" fill="#58a6ff" letter-spacing="0.8">LIVE DEMO</text>
-  </g>
   <text x="44" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#e6edf3">A neural network teaches itself to race — no hand-coded driving rules.</text>
 
   <g>
