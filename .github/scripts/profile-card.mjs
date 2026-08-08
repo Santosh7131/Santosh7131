@@ -103,7 +103,7 @@ const ID = {
   // Drawn inside the panel, so these are copyable text rather than links — an SVG
   // served as an image cannot carry a working hyperlink. Only contacts Santosh has
   // cleared for public use belong here.
-  contact: 'rsantoshkumaar2005@gmail.com   ·   linkedin.com/in/santosh7131   ·   portfolio — soon',
+  contact: 'rsantoshkumaar2005@gmail.com   ·   linkedin.com/in/santosh7131',
 };
 
 const THEMES = {
