@@ -6,9 +6,11 @@
 </p>
 
 <p align="center">
-  <a href="mailto:rsantoshkumaar2005@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-email-dark.svg"><img src="assets/badge-email-light.svg" alt="Email" height="34" /></picture></a>
-  <a href="https://www.linkedin.com/in/santosh7131"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-linkedin-dark.svg"><img src="assets/badge-linkedin-light.svg" alt="LinkedIn" height="34" /></picture></a>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/badge-portfolio-dark.svg"><img src="assets/badge-portfolio-light.svg" alt="Portfolio — coming soon" height="34" /></picture>
+  <a href="mailto:rsantoshkumaar2005@gmail.com">email</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/santosh7131">linkedin</a>
+  &nbsp;·&nbsp;
+  <sub>portfolio — soon</sub>
 </p>
 
 <p align="center">
