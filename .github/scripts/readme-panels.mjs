@@ -50,6 +50,24 @@ const DATA = {
       cta: 'try the live demo  →',
     },
     {
+      slug: 'kira',
+      eyebrow: 'PROJECT',
+      title: 'Kira',
+      // Added 2026-08-10 at Santosh's explicit request. The brain note [[kira]] is
+      // public:false and argues against profiling a home microphone — so every line
+      // here is lifted only from Kira's OWN public repo README, kept at that level of
+      // detail. No home / work-vault / tool-allowlist framing. See decision-log.
+      lead: 'A voice shell around a headless Claude Code session.',
+      bullets: [
+        'Say a wake word or press a key, talk, and get a spoken answer',
+        'Wake word, speech-to-text and the voice all run locally — the only network call is Claude Code’s',
+        'It drives a real Claude Code session, so it can read notes, search repos and write things down',
+      ],
+      award: '',
+      tech: ['Python', 'Claude Code', 'faster-whisper', 'openWakeWord', 'Piper'],
+      cta: 'explore the repo  →',
+    },
+    {
       slug: 'portfolio',
       eyebrow: 'PROJECT',
       title: 'Portfolio',

@@ -24,6 +24,15 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Santosh7131/Kira">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/project-kira-dark.svg">
+      <img src="assets/project-kira-light.svg" alt="Project — Kira: a voice shell around a headless Claude Code session. Say a wake word or press a key, talk, and get a spoken answer; wake word, speech-to-text and the voice all run locally, with the only network call being the one Claude Code makes anyway; it drives a real Claude Code session, so it can read notes, search repositories and write things down. Built with Python, Claude Code, faster-whisper, openWakeWord and Piper." width="880" />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
   <a href="https://portfolio-v2-two-snowy-32.vercel.app">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/project-portfolio-dark.svg">
