@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="438" viewBox="0 0 900 438" role="img" aria-label="Santosh Kumaar — Machine Learning Engineer. B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India. Contact: rsantoshkumaar2005@gmail.com   ·   linkedin.com/in/santosh7131. 183 commits  (past year).">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="438" viewBox="0 0 900 438" role="img" aria-label="Santosh Kumaar — Machine Learning Engineer. B.Tech CSE @ SRM  ·  BS Computer Science @ IIT Madras  ·  Chennai, India. Contact: rsantoshkumaar2005@gmail.com   ·   linkedin.com/in/santosh7131. 193 commits  (past year).">
   <title>Santosh Kumaar — Machine Learning Engineer</title>
   <defs>
     <clipPath id="barClip"><rect x="32" y="364" width="836" height="10" rx="5"/></clipPath>
@@ -16,7 +16,7 @@
     <g>
       <rect x="32" y="252" width="196" height="66" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
       <text x="48" y="277" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.4">contributions (1y)</text>
-      <text x="48" y="304" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="23" font-weight="600" fill="#e6edf3">194</text>
+      <text x="48" y="304" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="23" font-weight="600" fill="#e6edf3">204</text>
     </g>
     <g>
       <rect x="240" y="252" width="196" height="66" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -36,27 +36,27 @@
   <text x="32" y="350" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.4">language mix</text>
   <rect x="32" y="364" width="836" height="10" rx="5" fill="#21262d"/>
   <g clip-path="url(#barClip)">
-<rect x="32" y="364" width="266.8" height="10" fill="#3572A5"/><rect x="298.8" y="364" width="256.11" height="10" fill="#3178c6"/><rect x="554.91" y="364" width="122.77" height="10" fill="#f1e05a"/><rect x="677.68" y="364" width="68.85" height="10" fill="#00B4AB"/><rect x="746.53" y="364" width="55.71" height="10" fill="#e34c26"/><rect x="802.25" y="364" width="65.75" height="10" fill="#8b949e"/>
+<rect x="32" y="364" width="302.99" height="10" fill="#3178c6"/><rect x="334.99" y="364" width="242.55" height="10" fill="#3572A5"/><rect x="577.54" y="364" width="111.61" height="10" fill="#f1e05a"/><rect x="689.16" y="364" width="67.55" height="10" fill="#00B4AB"/><rect x="756.71" y="364" width="50.72" height="10" fill="#e34c26"/><rect x="807.43" y="364" width="60.57" height="10" fill="#8b949e"/>
   </g>
 
     <g>
-      <circle cx="37" cy="404" r="5" fill="#3572A5"/>
-      <text x="49" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">Python 31.9%</text>
+      <circle cx="37" cy="404" r="5" fill="#3178c6"/>
+      <text x="49" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">TypeScript 36.2%</text>
     </g>
     <g>
-      <circle cx="149.8" cy="404" r="5" fill="#3178c6"/>
-      <text x="161.8" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">TypeScript 30.6%</text>
+      <circle cx="177.4" cy="404" r="5" fill="#3572A5"/>
+      <text x="189.4" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">Python 29%</text>
     </g>
     <g>
-      <circle cx="290.20000000000005" cy="404" r="5" fill="#f1e05a"/>
-      <text x="302.20000000000005" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">JavaScript 14.7%</text>
+      <circle cx="276.4" cy="404" r="5" fill="#f1e05a"/>
+      <text x="288.4" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">JavaScript 13.4%</text>
     </g>
     <g>
-      <circle cx="430.6" cy="404" r="5" fill="#00B4AB"/>
-      <text x="442.6" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">Dart 8.2%</text>
+      <circle cx="416.79999999999995" cy="404" r="5" fill="#00B4AB"/>
+      <text x="428.79999999999995" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">Dart 8.1%</text>
     </g>
     <g>
-      <circle cx="522.7" cy="404" r="5" fill="#e34c26"/>
-      <text x="534.7" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">HTML 6.7%</text>
+      <circle cx="508.9" cy="404" r="5" fill="#e34c26"/>
+      <text x="520.9" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8b949e">HTML 6.1%</text>
     </g>
 </svg>
